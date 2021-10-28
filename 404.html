@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <title>Crash Protect – надёжный защитник вашего Discord сервера</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="static/css/index.css">
+        <link rel="stylesheet" href="static/css/colors.css">
+        <link rel="stylesheet" href="static/css/mobile.css">
+        <style>
+            img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+                display: none!important;
+            }
+
+            #t404 {
+                font-weight: 400;
+                color: var(--primary);
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/aa391af691.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <link rel="canonical" href="https://crashprotect.ml/">
+        <meta itemprop="keywords" name="keywords" content="cp, дискорд, discord, защита, сервер, servers, server, protect, краш протект, defender, crash, краш, protector, защитник, анти краш бот, crash protect">
+        <meta name="description" content="Crash Protect – Discord бот, предназначенный для защиты серверов от краша, спама и рейдов.">
+        <meta property="og:title" content="Crash Protect – надёжный защитник вашего Discord сервера">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://crashprotect.ml/">
+        <meta property="og:image" content="/static/img/p1y.png">
+        <meta name="theme-color" content="#bb2be4">
+        <meta property="og:description" content="Crash Protect – Discord бот, предназначенный для защиты серверов от краша, спама и рейдов.">
+    </head>
+    <body onload="$('#loading').fadeOut();">
+        <div id="loading">
+            <img id="loading-image" src="static/img/loading.png" draggable="false" alt="Загрузка..."/>
+        </div>
+        <div class="header">
+            <a href="/" id="icon">
+                <img src="static/img/p1y.png" draggable="false"/>
+                <span>Crash Protect</span>
+            </a>
+            <div class="buttons">
+                <a href="/invite"><i class="fas fa-plus fa-1x"></i> Пригласить бота</a>
+                <a href="/support"><i class="fas fa-question fa-1x"></i> Поддержка</a>
+                <a href="https://docs.crashprotect.ml"><i class="fas fa-book fa-1x"></i> Документация</a>
+            </div>
+        </div>
+        <div class="container title">
+            <h1>Ой...</h1>
+            <p>Кажется, тут ничего нет. Вы будете перенаправлены на предыдущую страницу через <span id="t404">5</span> сек.</p>
+        </div>
+
+        <script>
+            var timer = 5;
+            setInterval(() => {
+                timer--;
+                if(timer < 0) {
+                    timer = 0;
+                    history.back();
+                }
+                $("#t404").text(timer);
+            }, 1000);
+        </script>
+    </body>
+</html>
