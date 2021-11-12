@@ -1,0 +1,9 @@
+:root{
+    --primary: #bb2be4;
+    --warning: #ecbe26;
+    --error: #da4f36;
+    --success: #329c5f;
+
+    --popups: radial-gradient(circle, rgba(50,156,95,1) 0%, rgba(42,176,76,1) 100%);
+    --popupe: radial-gradient(circle, rgba(218,79,54,1) 0%, rgba(171,71,33,1) 100%);
+}
