@@ -15,6 +15,7 @@ body {
     align-items: center;
     line-height: auto;
     background: #181818;
+    z-index: 50;
 }
 
 .header * {
